@@ -74,6 +74,34 @@ console.log(makeName('Robert','"Beto"','O\'Rourke'));
 
 console.log(makeName.length);
 
+function makeBetterName(firstName, middleName, lastName) {
+  if (middleName.length===1) {
+    middleName= middleName + ".";
+    //adding and updating here:
+    let fullName= firstName + ' '+ middleName+ ' '+ lastName;
+    return fullName;
+  } else {
+    let fullName= firstName + ' '+ middleName+ ' '+ lastName;
+    return fullName;
+  }
+}
+console.log(makeBetterName('Joan', 'Marie', 'Larkin'));
+console.log(makeBetterName('Donald','F','Trump'));
+
+function whoWon (home,away) {
+  if (home>away){
+    let message="The home team won";
+    return message;
+  } else if (home===away){
+      let message= "The teams tied";
+      return message;
+  } else {
+    let message="The away team won";
+    return message;
+  }
+}
+
+console.log(whoWon('12','12'));
 
 </script>
 </body>
